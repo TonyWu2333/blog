@@ -35,7 +35,7 @@
 # github地址, 头部导航右上角的github链接
 Github: 
   on: true
-  url: https://github.com/yuang01/hexo-theme-bamboo
+  url: https://github.com/tonywu2333
 
 # 网站logo
 logo: /medias/logo.jpg # 为空则不显示
@@ -52,8 +52,8 @@ sidebar:
       avatar: https://pic2.zhimg.com/80/v2-42b72d5ebee4b8d8aa70d9687effe87b_1440w.webp
       shape: rectangle # circle, rectangle
       url: /about/
-      title: 当你凝视深渊时，深渊也在凝视着你
-      subtitle: ————尼采
+      title: T-ON-Y
+      subtitle: 异世界穿越者
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
       background: '#fff'
@@ -62,11 +62,11 @@ sidebar:
         - icon: fas fa-rss
           url: /atom.xml
         - icon: fas fa-envelope
-          url: mailto:me@xxx.com
+          url: mailto:tonywu.vip@outlook.com
         - icon: fab fa-github
-          url: https://github.com/yuang01/hexo-theme-bamboo
+          url: https://github.com/tonywu2333
         - icon: fab fa-qq
-          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=你的qq号码
+          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2038838159
     # ---------------------------------------
     side_toc:
       on: true
@@ -194,7 +194,7 @@ swiper:
   bubble: true # 轮播图是否显示气泡,也可以打开底下的花瓣或者雪花特效 sakura（花瓣）: true snow(雪花): true
   wave: true # 轮播图底下的波浪特效
   # 当没有文章设置swiper: true时候，轮播图会显示以下default默认内容，可自行切换对应内容
-  defaultImg: 'https://pic1.zhimg.com/v2-af3ccef61cf58b1a70765747cc1bbeac_b.jpg' # 图片，没有则随机选取
+  defaultImg: '/medias/back/jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
   defaultTile: '青墨书晚风' # 标题
@@ -368,7 +368,8 @@ notice:
   seamless: false # 为true时，则无缝不停止滚动，false是会停一下的滚动
   title: '公告'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
-  list: # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
+  list: 
+    # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
     # - title: '#博客更新到2.0了'
     #   date: '2021-04-28'
     #   url: '/archives'   # 可以为空, 也可以是本地页面地址如 '/archives'
