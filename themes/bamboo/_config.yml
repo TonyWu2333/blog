@@ -38,7 +38,7 @@ Github:
   url: https://github.com/TonyWu2333
 
 # 网站logo
-logo: /medias/logo.png # 为空则不显示
+logo: /medias/logo.jpg # 为空则不显示
 
 # 网站 favicon
 favicon: /favicon.ico # or .png .jpg .svg .gif .jpeg .ico
