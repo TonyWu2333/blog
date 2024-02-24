@@ -1,3 +1,4 @@
+
 # hexo-theme-bamboo
 
 ![master version](https://img.shields.io/github/package-json/v/yuang01/hexo-theme-bamboo/dev?label=dev)
@@ -14,7 +15,7 @@
     </a>
 </div>
 
-最新文档，请[netifly 查看](https://hexo-theme-bamboo.netlify.app/)
+最新文档，请[netifly查看](https://hexo-theme-bamboo.netlify.app/)
 
 ![图片描述](https://pic1.zhimg.com/80/v2-33f4b9320449fe8a2046f62a15f79740_1440w.webp)
 ![图片描述](https://pic1.zhimg.com/80/v2-06eb82cb2a1d3086d15fbe9c52730264_1440w.webp)
@@ -40,40 +41,30 @@
 </table> -->
 
 <!-- more -->
-
 ## 下载
-
-首先你需要有一个[Hexo](https://hexo.io/zh-cn/)，按照官网的方法，很容易的就能创建一个 hexo 博客。
-
-#### 当你有了 hexo 博客之后，进入`themes`文件夹下使用 `Git clone` 命令来下载:
-
-github 安装
-
-```bash
+首先你需要有一个[Hexo](https://hexo.io/zh-cn/)，按照官网的方法，很容易的就能创建一个hexo博客。
+#### 当你有了hexo博客之后，进入`themes`文件夹下使用 `Git clone` 命令来下载:
+github安装
+``` bash
 git clone https://github.com/yuang01/hexo-theme-bamboo.git
 ```
-
-gitee 安装
-
+gitee安装
 ```bash
 git clone https://gitee.com/yuang01/hexo-theme-bamboo.git
 ```
+修改hexo根目录下的站点配置文件`_config.yml`，把主题改为`hexo-theme-bamboo`，通过主题文件夹下的`config.yml`配置主题即可
 
-修改 hexo 根目录下的站点配置文件`_config.yml`，把主题改为`hexo-theme-bamboo`，通过主题文件夹下的`config.yml`配置主题即可
-
-#### 或者 npm 来安装，进入 hexo 根目录使用如下命令
-
+#### 或者npm来安装，进入hexo根目录使用如下命令
 ```bash
 npm i hexo-theme-bamboo
 ```
-
-注意：此方法只支持 Hexo 在 5.0.0 版本以上
+注意：此方法只支持Hexo在5.0.0版本以上
 **通过 npm 安装并不会在 themes 里生成主题文件夹，而是在 node_modules 里生成**
-修改 hexo 根目录下的站点配置文件`_config.yml`，把主题改为`bamboo`
+修改hexo根目录下的站点配置文件`_config.yml`，把主题改为`bamboo`
 
-接着在 hexo 根目录下新建文件`_config.bamboo.yml`,从`node_modules`文件夹下找到`hexo-theme-bamboo`文件夹下的`_config.yml`，将里面的内容复制到`_config.bamboo.yml`文件中即可，在`_config.bamboo.yml`文件中对主题进行配置
+接着在hexo根目录下新建文件`_config.bamboo.yml`,从`node_modules`文件夹下找到`hexo-theme-bamboo`文件夹下的`_config.yml`，将里面的内容复制到`_config.bamboo.yml`文件中即可，在`_config.bamboo.yml`文件中对主题进行配置
 
-## 喜欢的话，可以在 github 上点个 star 哦
+## 喜欢的话，可以在github上点个star哦
 
 ## Stargazers over time
 
