@@ -369,10 +369,10 @@ notice:
   title: '公告'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
   list: 
-    - title: '#博客更新啦'
-      date: '2024-2-26'
-      url: ''  
-      color: blue 
+    title: '#博客更新啦'
+    date: '2024-2-26'
+    url: ''  
+    color: blue 
     # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
     # - title: '#博客更新到2.0了'
     #   date: '2021-04-28'
