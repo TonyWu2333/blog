@@ -49,7 +49,7 @@ sidebar:
   widget_library:
     side_blogger:
       on: true
-      avatar: https://pic2.zhimg.com/80/v2-42b72d5ebee4b8d8aa70d9687effe87b_1440w.webp
+      avatar: https://raw.githubusercontent.com/TonyWu2333/pic/main/head.png
       shape: rectangle # circle, rectangle
       url: /about/
       title: T-ON-Y
@@ -600,7 +600,7 @@ color_scheme:
     # 首页文章列表的背景颜色, url("http://xxx.png") or red or #000 or rgba() ..
     postListBackground: 'rgba(255,255,255,1)'
     # 首页页面的底部背景颜色，空字符串透明('transparent')，可以是白色('#fff')等颜色, 也可以是图片，例如  'url("https://img11.360buyimg.com/ddimg/jfs/t1/169624/29/16/4603017/5fec2c79Eecbd536a/308b28b82a013cd2.png")'
-    bgFloor: 'url("https://raw.githubusercontent.com/TonyWu2333/pic/main/girl_shell_hare_167320_1280x720.jpg")' # 如果是图片地址，url里面请用双引号
+    bgFloor: 'url("https://raw.githubusercontent.com/TonyWu2333/pic/main/girl_grass_city_213102_1280x720.jpg")' # 如果是图片地址，url里面请用双引号
     headerMenuBackgroundColor: '' 
     # headerMenuBackgroundColor:头部导航背景颜色, 为空则使用theme主题色, 
     # headerMenuBackgroundColor写法: rgba(268, 264, 269, 0.8) or #42b983 or red or 也可以是渐变颜色 linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)  or 也可以是url("图片地址")
