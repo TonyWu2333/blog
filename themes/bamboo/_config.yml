@@ -285,7 +285,7 @@ ribbon:
 # live-2d(左下角动画人物)
 live2d:
   on: true # 控制显示或者隐藏
-  modelId: 0 # 0 or 1 or 2 or 3 or 4 or 5 or 6
+  modelId: 1 # 0 or 1 or 2 or 3 or 4 or 5 or 6
   open: true # 默认展开，false则收缩，通过点左下角的方块点击，控制展开或者收缩
 
 # 首页雪花飘落效果--冬天
@@ -296,7 +296,7 @@ snow:
 # 首页花瓣飘落效果--春天
 sakura:
   on: false
-  onlyPc: true # 设为true，只有pc端显示花瓣特效
+  onlyPc: false # 设为true，只有pc端显示花瓣特效
 
 # 首页文章图片是否一左一右交错显示
 homePostImgsPosition:
@@ -311,7 +311,7 @@ lantern:
 
 # https://scrollrevealjs.org/api/reveal.html 滚动动画, 旧版本用的是aos.js(已经弃用aos.js)
 scrollreveal:
-  on: false
+  on: true
   js: https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js
   distance: 120px
   duration: 400 # ms
