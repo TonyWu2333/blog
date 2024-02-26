@@ -9,10 +9,10 @@ menu:
     url: /archives
     icon: fas fa-archive
   Tags:
-    url: /tags
+    url: /tag
     icon: fas fa-tags
   Categories:
-    url: /categories
+    url: /categorie
     icon: fas fa-bookmark
 #   Friends:
 #     url: /friends
@@ -569,8 +569,8 @@ categories:
   desc: '愿你如风，被人温柔以待'
   full: false
   video: ''
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
-  titleColor: '' # 标题字体颜色
+  background: 'red' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  titleColor: 'blue' # 标题字体颜色
 
 #分类详情页面，配置同上
 categoryDetail:
