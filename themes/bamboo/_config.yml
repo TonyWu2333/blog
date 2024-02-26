@@ -199,10 +199,10 @@ swiper:
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
   defaultTile: 'T-ON-Y的小窝' # 标题
   defaultDesc: [] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
-  defaultLeftBtnText: '阅读文档' # 左边按钮文字, 空字符串则不显示
-  defaultLeftBtnLink: 'https://yuang01.gitee.io/2021/02/08/hexo-theme-bamboo-new/' # 左边按钮链接 
-  defaultRightBtnText: '下载主题' # 右边按钮的文字，空字符串则不显示
-  defaultRightBtnLink: 'https://gitee.com/yuang01/hexo-theme-bamboo/repository/archive/dev.zip' # 右边的按钮的链接
+  defaultLeftBtnText: '我的b站主页' # 左边按钮文字, 空字符串则不显示
+  defaultLeftBtnLink: 'https://space.bilibili.com/355271238/' # 左边按钮链接 
+  defaultRightBtnText: '我的' # 右边按钮的文字，空字符串则不显示
+  defaultRightBtnLink: '' # 右边的按钮的链接
   defaultDescTyped: true # defaultDesc文字是否开启打字特效  is typed
   defaultDescTypedSpeed: 100 # defaultDesc 打字速度, typed typeSpeed
   defaultDescTypedBackSpeed: 50 # defaultDesc 打字返回速度 typed backSpeed
@@ -258,7 +258,7 @@ cursor_effect:
 
 # 头部导航是否显示天气
 weather:
-  on: false
+  on: true
 
 # 全文搜索功能
 search:
@@ -296,7 +296,7 @@ snow:
 # 首页花瓣飘落效果--春天
 sakura:
   on: false
-  onlyPc: false # 设为true，只有pc端显示花瓣特效
+  onlyPc: true # 设为true，只有pc端显示花瓣特效
 
 # 首页文章图片是否一左一右交错显示
 homePostImgsPosition:
@@ -359,7 +359,7 @@ copyright:
 motto:
   on: true
   title: '座右铭'
-  content: '沉淀后我愿意做个温暖的人，有自己的喜好，有自己的原则，有自己的信仰，不急功近利，不浮夸轻薄。宠辱不惊，淡定安逸，心静如水，不忘初心，方得始终。——凌茜'
+  content: '除了我的好奇，我没有什么特别的才能 —— 阿尔伯特·爱因斯坦'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
@@ -369,6 +369,10 @@ notice:
   title: '公告'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
   list: 
+    title: '博客更新啦！'
+    date: '2024-2-26'
+    url: '' 
+    color: blue 
     # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
     # - title: '#博客更新到2.0了'
     #   date: '2021-04-28'
@@ -418,10 +422,10 @@ bubble:
 
 # valine 评论 https://valine.js.org
 valine:
-  on: false
+  on: true
   appid: 
   appkey: 
-  avatar: '' # 匿名者头像选项 https://valine.js.org/avatar.html
+  avatar: identicon # 匿名者头像选项 https://valine.js.org/avatar.html
   placeholder: '客官，说点什么吧' # 评论内容输入框的 placeholder
   master: '' # 博主标签识别，博主邮箱md5 可以去md5加密网站，例如 https://md5jiami.51240.com/ ，将自己的邮箱输入， 得到 32位小写 的字符串
   friends: [] # 小伙伴的 邮箱md5， 是个数组
