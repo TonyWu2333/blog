@@ -492,9 +492,9 @@ gitalk:
 utterance:
   on: true
   # 仓库名字，格式：你的用户 ID/ 仓库名称，如：yuang01/yuang01.github.io
-  repo: TonyWu2333/comment-repo
+  repo: 
   # 主题
-  theme: light
+  theme:
     light: github-light
     dark: github-dark
   # 映射配置
