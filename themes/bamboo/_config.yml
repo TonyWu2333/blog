@@ -486,7 +486,7 @@ gitalk:
 
 # utterance 评论  官网：https://utteranc.es/, 建议用这个评论，默认开启的这个评论
 utterance:
-  on: true
+  on: false
   # 仓库名字，格式：你的用户 ID/ 仓库名称，如：yuang01/yuang01.github.io
   repo: TonyWu2333/comment-repo
   # 主题
