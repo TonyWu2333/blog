@@ -14,11 +14,8 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  name:
-    url: /huoban
-    icon: fas fa-film
-#   Friends:
-#     url: /friends
+  Friends:
+    url: /friends
 #   更多: # 这是二级菜单的写法
 #    icon: fas fa-link
 #    children:
