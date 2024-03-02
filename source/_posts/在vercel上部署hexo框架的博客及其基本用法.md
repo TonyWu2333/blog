@@ -5,4 +5,10 @@ tags: 计算机 vercel hexo 博客
 ---
 # 在vercel上部署hexo框架的博客及其基本用法
 
+## 本地部署
 
+## vercel部署
+
+## 关于图库
+
+## 一些使用方法
