@@ -14,6 +14,9 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
+  name:
+    url: /huoban
+    icon: fas fa-film
 #   Friends:
 #     url: /friends
 #   更多: # 这是二级菜单的写法
@@ -533,7 +536,7 @@ danmu:
 
 # 归档页面图片、描述、视频，全屏 or 'http://xxx'
 archive:
-  title: 'archive'
+  title: '归档'
   img: 'https://raw.githubusercontent.com/TonyWu2333/pic/main/girl_shell_hare_167320_1280x720.jpg'
   desc: '人生天地之间，若白驹过隙，忽然而已'
   full: true # 设置为true，则图片全屏显示
@@ -545,7 +548,7 @@ archive:
 
 # 标签页面，配置同上
 tag:
-  title: 'tags'
+  title: '标签'
   img: 'https://pic2.zhimg.com/80/v2-bf6c555e7c61a57ba4a1fd95a9a32975_1440w.jpg' # 标签页上面的图片
   desc: '愿你如风，被人温柔以待'
   full: true # 标签页上面的图片是否全屏显示
@@ -555,7 +558,7 @@ tag:
 
 # 标签详情页面，配置同上
 tagDetail:
-  title: 'tag'
+  title: '标签'
   img: 'https://pic1.zhimg.com/80/v2-604a15cef201cf177943af2d915eb2e7_1440w.jpg?source=1940ef5c'
   desc: '愿你如风，被人温柔以待' # 标签页详情上上面的图片上的文字
   full: true
@@ -564,7 +567,7 @@ tagDetail:
 
 # 分类页面，配置同上
 categories:
-  title: 'categories'
+  title: '分类'
   img: 'https://pic2.zhimg.com/80/v2-7c496c95897fb15768593cc5170c8b1a_1440w.jpg?source=1940ef5c'
   desc: '愿你如风，被人温柔以待'
   full: true
@@ -574,7 +577,7 @@ categories:
 
 #分类详情页面，配置同上
 categoryDetail:
-  title: 'category'
+  title: '分类'
   img: 'https://pic3.zhimg.com/80/v2-98dcd81cb0d1fee52a807c13cedb8338_1440w.jpg?source=1940ef5c'
   desc: '愿你如风，被人温柔以待'
   full: true
