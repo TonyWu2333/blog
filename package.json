@@ -6,7 +6,7 @@
     "build": "hexo generate"
   },
   "hexo": {
-    "version": ""
+    "version": "7.1.1"
   },
   "dependencies": {
     "hexo": "^7.0.0",
