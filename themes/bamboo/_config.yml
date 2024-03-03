@@ -242,9 +242,9 @@ donate:
   on: true
 donate_message: 你的赏识是我前进的动力
 # 支付宝打赏图片相对路径
-Alipay: 'https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp'
+Alipay: 'https://s2.loli.net/2024/03/03/TlkGg7vtJ2UX1sn.jpg'
 # 微信打赏图片相对路径
-WeChatpay: 'https://pic2.zhimg.com/80/v2-29e78b52051ce542adf6d786d61fbd19_1440w.webp'
+WeChatpay: 'https://s2.loli.net/2024/03/03/NeHcLV8x5bOKsZC.jpg'
 
 # 分享功能
 sharejs: 
