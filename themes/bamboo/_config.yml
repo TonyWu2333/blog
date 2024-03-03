@@ -538,7 +538,7 @@ danmu:
 # 归档页面图片、描述、视频，全屏 or 'http://xxx'
 archive:
   title: '归档'
-  img: 'https://raw.githubusercontent.com/TonyWu2333/pic/main/girl_shell_hare_167320_1280x720.jpg'
+  img: 'https://s2.loli.net/2024/03/03/SgAnlQa8VGc9vTF.jpg'
   desc: '人生天地之间，若白驹过隙，忽然而已'
   full: true # 设置为true，则图片全屏显示
   video: '' # 如果有值，则在屏幕大于920px的时候，全屏显示视频，为空则显示图片(img)
