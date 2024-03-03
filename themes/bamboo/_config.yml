@@ -314,7 +314,7 @@ scrollreveal:
   on: true
   js: https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js
   distance: 120px
-  duration: 400 # ms
+  duration: 500 # ms
   interval: 30 # ms
   scale: 1 # 0.1~1
   origin: 'bottom'
@@ -359,7 +359,7 @@ copyright:
 motto:
   on: true
   title: '座右铭'
-  content: '我没有特殊的才能，但我有充满热情的好奇心——阿尔伯特·爱因斯坦'
+  content: '人生如逆旅，我亦是行人。——苏轼'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
@@ -368,7 +368,11 @@ notice:
   seamless: false # 为true时，则无缝不停止滚动，false是会停一下的滚动
   title: '公告'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
-  list: 
+  list:
+    - title: '暂时木有公告'
+      date: '2024-03-03'
+      url: ''
+      color: gray
     # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
     # - title: '#博客更新到2.0了'
     #   date: '2021-04-28'
@@ -397,7 +401,7 @@ notice:
 
 # 文章置顶
 topArticle:
-  on: true
+  on: false
   background: 'rgba(255,255,255,1)' # url("http://xxx.png") or red or #000 or rgba() ..
 
 # 归档，标签，分类页图片上的打字效果
