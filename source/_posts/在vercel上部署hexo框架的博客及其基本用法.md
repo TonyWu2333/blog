@@ -6,7 +6,7 @@ tags:
   - vercel
 categories: 前端
 ---
-# 在vercel上部署hexo框架的博客及其基本
+# 在vercel上部署hexo框架的博客
 
 ## 本地部署
 
