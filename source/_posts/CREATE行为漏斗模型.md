@@ -10,6 +10,8 @@ categories: 产品
 
 当我们构建UI和UX时，我们常常会分析用户的行为，但总是无从下手。CREATE漏斗模型（由Stephen Wendell设计）给我们提供了一个思路。CREATE分别是Cue（线索）、Reaction（反应）、Evaluation（评估）、Ability（能力）、Timing（时机）、Execute（行动）
 
+![CREATE行为漏斗](https://s2.loli.net/2024/03/04/UKq1cBVWb9YPHXG.png)
+
 ## Cue
 
 线索提示，即让用户意识到某个产品或功能的存在。吸引用户的注意力并在他的脑袋中留下印象是首要条件。
