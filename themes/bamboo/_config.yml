@@ -16,8 +16,10 @@ menu:
     icon: fas fa-bookmark
   Friends:
     url: /friends
+    icon: fas fa-user-group
   关于我: 
     url: /about
+    icon: fas fa-user
   订阅:
     url: /atom.xml
     icon: fas fa-rss
