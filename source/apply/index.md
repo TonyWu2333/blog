@@ -12,3 +12,5 @@ date: 2024-03-03 05:57:47
 "screenshot": "https://picx.zhimg.com/80/v2-d7666d074ec59ca4cf14f15c5f891643_1440w.webp",
 "description": "异世界の旅者"
 ```
+
+screenshot为网页截图，可以为空
