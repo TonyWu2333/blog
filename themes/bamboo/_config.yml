@@ -16,6 +16,8 @@ menu:
     icon: fas fa-bookmark
   Friends:
     url: /friends
+  关于我: 
+    url: /about
 #   更多: # 这是二级菜单的写法
 #    icon: fas fa-link
 #    children:
