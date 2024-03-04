@@ -24,6 +24,7 @@ menu:
     url: /atom.xml
     icon: fas fa-rss
   更多:
+  children: 
     - name: 申请添加友链
       url: /apply
 #   更多: # 这是二级菜单的写法
