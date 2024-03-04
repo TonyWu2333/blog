@@ -641,8 +641,8 @@ site_footer:
   # busuanzi是访客数那个,假如说你想在 social和 copyright中间加一个自定义内容, 可以这样写 layout: [social, aaa ,copyright, busuanzi, custom], 然后在下面写上aaa: 'markdown格式', aaa这个名称随便取
   layout: [social, copyright, custom]
   social:
-    # - icon: fas fa-rss
-    #   url: /atom.xml
+    - icon: fas fa-rss
+      url: /atom.xml
     # - icon: fas fa-envelope
     #   url: mailto:1730241541@qq.com
     # - icon: fas fa-github
