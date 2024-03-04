@@ -17,16 +17,16 @@ menu:
   Friends:
     url: /friends
     icon: fas fa-link
-  关于我: 
-    url: /about
-    icon: fas fa-user
+  
   订阅:
     url: /atom.xml
     icon: fas fa-rss
   更多:
-  children: 
+    children: 
     - name: 申请添加友链
       url: /apply
+    - name: 关于我 
+      url: /about
 #   更多: # 这是二级菜单的写法
 #    icon: fas fa-link
 #    children:
