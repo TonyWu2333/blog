@@ -272,17 +272,6 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/about" class="drawer-menu-item-link">
-                  
-                    <i class="fas fa-user" aria-hidden="true"></i>
-                  
-                  <span class="name">关于我</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
                 <a href="/atom.xml" class="drawer-menu-item-link">
                   
                     <i class="fas fa-rss" aria-hidden="true"></i>
@@ -294,19 +283,33 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
                   <span>
                     
                     <span class="name">更多</span>
                   </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
                 </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
                   
                   <li>
                     <a href="/apply">
                       
                       <span>申请添加友链</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/msg">
+                      
+                      <span>留言板</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <span>关于我</span>
                     </a>
                   </li>
                   
@@ -443,17 +446,6 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/about" class="menu-item-link" title="关于我">
-                  
-                    <i class="fas fa-user" aria-hidden="true"></i>
-                  
-                  <span class="name">关于我</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
                 <a href="/atom.xml" class="menu-item-link" title="订阅">
                   
                     <i class="fas fa-rss" aria-hidden="true"></i>
@@ -476,6 +468,20 @@
                     <a href="/apply">
                       
                       <span>申请添加友链</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/msg">
+                      
+                      <span>留言板</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <span>关于我</span>
                     </a>
                   </li>
                   
@@ -673,6 +679,23 @@
                 <div class="bullet"></div>
                 <a href="/archives/2024">2024</a>
             </div>
+          
+          <li class="post-item" data-aos="fade-left">
+            
+            <div class="post-img-box">
+              <a href="/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                <span class="post-date">03-04</span>
+              </div>
+              <a class="post-title" href="/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/">CREATE行为漏斗模型</a>
+            </div>
+          </li>
+        
           
           <li class="post-item" data-aos="fade-left">
             

@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-03-04T03:23:51.853Z</updated>
+  <updated>2024-03-05T06:57:12.264Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -17,22 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CREATE行为漏斗模型</title>
+    <link href="http://tonywu.top/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://tonywu.top/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/</id>
+    <published>2024-03-04T12:37:29.000Z</published>
+    <updated>2024-03-05T06:57:12.264Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CREATE行为漏斗模型&quot;&gt;&lt;a href=&quot;#CREATE行为漏斗模型&quot; class=&quot;headerlink&quot; title=&quot;CREATE行为漏斗模型&quot;&gt;&lt;/a&gt;CREATE行为漏斗模型&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="产品" scheme="http://tonywu.top/categories/%E4%BA%A7%E5%93%81/"/>
+    
+    
+    <category term="UX" scheme="http://tonywu.top/tags/UX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>操作系统答疑（一）</title>
     <link href="http://tonywu.top/2024/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AD%94%E7%96%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://tonywu.top/2024/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AD%94%E7%96%91%EF%BC%88%E4%B8%80%EF%BC%89/</id>
     <published>2024-03-04T03:22:42.000Z</published>
-    <updated>2024-03-04T03:23:51.853Z</updated>
+    <updated>2024-03-04T11:15:49.402Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-1-What-are-the-three-main-purposes-of-an-operating-system&quot;&gt;&lt;a href=&quot;#1-1-What-are-the-three-main-purposes-of-an-operating-system&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;What-are-the-three-main-purposes-of-an-operating-system&quot;&gt;&lt;a href=&quot;#What-are-the-three-main-purposes-of-an-operating-system&quot;</summary>
         
       
     
     
+    
+    <category term="操作系统" scheme="http://tonywu.top/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
     <category term="operating system" scheme="http://tonywu.top/tags/operating-system/"/>
@@ -44,7 +71,7 @@
     <link href="http://tonywu.top/2024/03/03/%E5%9C%A8vercel%E4%B8%8A%E9%83%A8%E7%BD%B2hexo%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%8A%E5%85%B6%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
     <id>http://tonywu.top/2024/03/03/%E5%9C%A8vercel%E4%B8%8A%E9%83%A8%E7%BD%B2hexo%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%8A%E5%85%B6%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</id>
     <published>2024-03-02T20:41:23.000Z</published>
-    <updated>2024-03-03T11:36:11.172Z</updated>
+    <updated>2024-03-04T09:14:09.210Z</updated>
     
     
       
