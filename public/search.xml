@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>利用mklink指令清理c盘</title>
+      <link href="/2024/03/05/%E5%88%A9%E7%94%A8mklink%E6%8C%87%E4%BB%A4%E6%B8%85%E7%90%86c%E7%9B%98/"/>
+      <url>/2024/03/05/%E5%88%A9%E7%94%A8mklink%E6%8C%87%E4%BB%A4%E6%B8%85%E7%90%86c%E7%9B%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="利用mklink指令清理c盘"><a href="#利用mklink指令清理c盘" class="headerlink" title="利用mklink指令清理c盘"></a>利用mklink指令清理c盘</h1><p>今天发现c盘满了，想清理一下，但是面对c盘中的文件又不敢轻举妄动。在不清楚文件作用的情况下，直接删除文件还是有风险的。那么有没有什么方法可以保留文件但是同时又把c盘中的空间清理出来呢？带着这个问题，我打开搜索引擎，果然发现了符合我需求的办法。</p><h2 id="mklink"><a href="#mklink" class="headerlink" title="mklink"></a>mklink</h2><p>没错，解决方案就是windows系统自带的指令——mklink，当我们在cmd输入<code>mklink /?</code>时，控制台会返回以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">MKLINK [[/D] | [/H] | [/J]] Link Target</span><br><span class="line"></span><br><span class="line">        /D      创建目录符号链接。默认为文件</span><br><span class="line">                符号链接。</span><br><span class="line">        /H      创建硬链接而非符号链接。</span><br><span class="line">        /J      创建目录联接。</span><br><span class="line">        Link    指定新的符号链接名称。</span><br><span class="line">        Target  指定新链接引用的路径</span><br><span class="line">                (相对或绝对)。</span><br></pre></td></tr></table></figure><h2 id="windows链接类型"><a href="#windows链接类型" class="headerlink" title="windows链接类型"></a>windows链接类型</h2><p>为了看懂控制台给出的用法，我查询了windows的各个链接类型以及他们的区别</p><ol><li><p>快捷方式（Shortcut）：这个是最常见的链接类型了，我就不过多介绍</p></li><li><p>符号链接（Symbolic Link）：符号链接的路径可以是相对路径或绝对路径，可以是目录或文件，不占空间，可以跨本地磁盘，也可以跨网络磁盘（共享目录）。源目录移动、重命名或删除后，链接目录无效；链接目录删除，源目录不受影响；源目录里面的文件发生变化时（新增、修改、删除），链接目录里面的文件同步发生变化，反之，同样成立。</p></li><li><p>联接（Junction）：联接的路径只能是绝对路径，只能是目录，不占空间，只能跨本地磁盘。其他与符号链接差别不大。</p></li><li><p>硬链接（Hard Link）：硬链接的路径只能是绝对路径，占用空间和源文件一样且只能是文件。源文件删除后，链接文件无效；链接文件删除，源文件不受影响；只有将源文件和链接文件全部删除时，才会将文件真正的删除；当源文件内容发生变化时（修改），链接文件同步发生修改，反之，同样成立。</p></li></ol><h2 id="文件符号链接操作"><a href="#文件符号链接操作" class="headerlink" title="文件符号链接操作"></a>文件符号链接操作</h2><p>作为测试，我首先在E盘和F盘各创建一个test文件夹。并创建了<code>E:\test\text1.txt</code>和<code>F:\test\text2.txt</code>两个文件。然后运行指令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink E:\test\text1.txt F:\test\text2.txt</span><br></pre></td></tr></table></figure><p>但是控制台给我一个报错</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当文件已存在时，无法创建该文件。</span><br></pre></td></tr></table></figure><p>于是我删除了<code>E:\test\text1.txt</code>，然后再次运行指令，控制台返回了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为 E:\test\text1.txt &lt;&lt;===&gt;&gt; F:\test\text2.txt 创建的符号链接</span><br></pre></td></tr></table></figure><p>此时<code>E:\test</code>下多出了一个叫<code>test1.txt</code>的文件，并且有一个类似超链接的标志，我在任意一个txt文件中修改内容，另一个则会同步改变。</p><h2 id="目录符号链接操作"><a href="#目录符号链接操作" class="headerlink" title="目录符号链接操作"></a>目录符号链接操作</h2><p>与文件符号链接一样，我们现在<code>F:\test</code>下创建了一个<code>target</code>的文件夹，然后运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mklink /d E:\test\link F:\test\target</span><br><span class="line">为 E:\test\link &lt;&lt;===&gt;&gt; F:\test\target 创建的符号链接</span><br></pre></td></tr></table></figure><p>现在<code>E:\test</code>又出现一个<code>link</code>文件夹，这个文件夹与target也是同步变化的，最重要的是，这个link文件夹是不占空间的，也就是说，我们可以利用这种方法将c盘的一些文件夹作为link符号链接到target上，以达到清理c盘空间的目的。</p><h2 id="目录联接操作"><a href="#目录联接操作" class="headerlink" title="目录联接操作"></a>目录联接操作</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mklink /j E:\test\link F:\test\target</span><br><span class="line">为 E:\test\link &lt;&lt;===&gt;&gt; F:\test\target 创建的联接</span><br></pre></td></tr></table></figure><p>在这个例子中与目录符号链接的效果差别不大</p><h2 id="硬链接操作"><a href="#硬链接操作" class="headerlink" title="硬链接操作"></a>硬链接操作</h2><p>我们将<code>E:\test\</code>清空并创建<code>F:\test\text2.txt</code>，执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink /h E:\test\text1.txt F:\test\text2.txt</span><br></pre></td></tr></table></figure><p>系统报错</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统无法将文件移到不同的磁盘驱动器。</span><br></pre></td></tr></table></figure><p>差点忘了硬链接不能跨本地磁盘</p><p>重新执行命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink /h F:\test\text3.txt F:\test\text2.txt</span><br></pre></td></tr></table></figure><p>运行成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为 F:\test\text3.txt &lt;&lt;===&gt;&gt; F:\test\text2.txt 创建了硬链接</span><br></pre></td></tr></table></figure><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>今天通过清理c盘的契机了解到mklink指令，并深入了解（虽然也不是很深入）了windows系统上不同的链接类型。如果大家有什么想补充或者纠错的，请在评论区留言~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMD </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cmd </tag>
+            
+            <tag> windows </tag>
+            
+            <tag> mklink </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CREATE行为漏斗模型</title>
       <link href="/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/"/>
       <url>/2024/03/04/CREATE%E8%A1%8C%E4%B8%BA%E6%BC%8F%E6%96%97%E6%A8%A1%E5%9E%8B/</url>
