@@ -1,0 +1,25 @@
+home_widget:
+  - class_name: my_github_container
+    id_name: my_github_container
+    order: -1
+    name: Github日历
+    icon: fa-solid fa-calendar-days
+    icon_color: '#42b983'
+    url: https://github.com/tonywu2333
+    background: '#fff'
+    html: '
+      <img no-lazy width="100%" hright="300px" src="https://ghchart.rshah.org/42b983/tonywu2333" alt="tonywu2333 github" />
+    '
+  - class_name: my_ip
+    id_name: my_ip
+    order: 0
+    name: 欢迎光临
+    icon: fa-solid fa-calendar-days
+    icon_color: '#42b983'
+    url: https://api.dzzui.com/api/ip
+    background: '#fff'
+    html: '
+      <div class="container" style="display: flex;justify-content: center;align-items: center;">
+        <img class="no-lazy" src="https://api.dzzui.com/api/ip">
+      </div>
+    '
