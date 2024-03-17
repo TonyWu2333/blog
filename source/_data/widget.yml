@@ -20,6 +20,6 @@ home_widget:
     background: '#fff'
     html: '
       <div class="container" style="display: flex;justify-content: center;align-items: center;">
-        <img class="no-lazy" style="width:50%;" src="https://api.dzzui.com/api/ip">
+        <img class="no-lazy" style="width:60%;" src="https://api.dzzui.com/api/ip">
       </div>
     '
