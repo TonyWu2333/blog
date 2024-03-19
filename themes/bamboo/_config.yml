@@ -17,6 +17,9 @@ menu:
   Friends:
     url: /friends
     icon: fas fa-link
+  导航:
+    url: https://nav.tonywu.top
+    icon: fas fa-location-dot
   
   订阅:
     url: /atom.xml
