@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-03-17T18:21:25.138Z</updated>
+  <updated>2024-03-31T23:11:50.315Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用beekeeper远程连接mysql数据库</title>
+    <link href="http://tonywu.top/2024/04/01/%E4%BD%BF%E7%94%A8beekeeper%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://tonywu.top/2024/04/01/%E4%BD%BF%E7%94%A8beekeeper%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
+    <published>2024-03-31T23:10:12.000Z</published>
+    <updated>2024-03-31T23:11:50.315Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用beekeeper远程连接mysql数据库&quot;&gt;&lt;a href=&quot;#使用beekeeper远程连接mysql数据库&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="mysql" scheme="http://tonywu.top/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>使用python脚本自动操作微信小程序</title>
