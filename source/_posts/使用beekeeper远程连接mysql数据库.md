@@ -107,14 +107,14 @@ sudo systemctl restart mysql
 
 安装完成后打开，点击new connection
 
-![image](https://s2.loli.net/2024/04/01/jTJO8cdCuRv3PB2.png)
+![](https://s2.loli.net/2024/04/01/jTJO8cdCuRv3PB2.png)
 
 connection type选择mysql
 
 接下来依次填写你服务器的ip（域名），要连接的端口（mysql默认3306），用户名及用户密码（刚刚创建的）
 
-![image-1](https://s2.loli.net/2024/04/01/8lvArm9iFsS4H3q.png)
+![](https://s2.loli.net/2024/04/01/8lvArm9iFsS4H3q.png)
 
 点击connect连接成功
 
-![20240401070534](https://s2.loli.net/2024/04/01/K6EXShsaJ7WilUp.png)
+![](https://s2.loli.net/2024/04/01/K6EXShsaJ7WilUp.png)
