@@ -26,6 +26,8 @@ menu:
     icon: fas fa-rss
   更多:
     children: 
+    - name: 人工智能
+      url: https://ai.tonywu.top
     - name: 申请添加友链
       url: /apply
     - name: 留言板
