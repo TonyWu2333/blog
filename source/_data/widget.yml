@@ -14,7 +14,7 @@ home_widget:
     id_name: my_ip
     order: 0
     name: 欢迎光临
-    icon: fa-solid fa-calendar-days
+    icon: fa-solid fa-heart
     icon_color: '#42b983'
     url: https://api.dzzui.com/api/ip
     background: '#fff'
