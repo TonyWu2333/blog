@@ -1,7 +1,10 @@
 ---
 title: 使用beekeeper远程连接mysql数据库
 date: 2024-04-01 07:10:12
-tags: mysql
+categories: mysql
+tags: 
+    - mysql
+    - beekeeper
 ---
 
 # 使用beekeeper远程连接mysql数据库
