@@ -1,7 +1,8 @@
 ---
 title: 搭建国内可访问的ai网页端
 date: 2024-04-03 12:10:17
-tags: vercel ai
+tags: vercel aicate
+categories: AI
 ---
 
 # 搭建国内可访问的ai网页端
