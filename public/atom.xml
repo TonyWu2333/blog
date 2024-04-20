@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-04-03T04:11:10.898Z</updated>
+  <updated>2024-04-20T20:28:15.711Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在阿里的灵积模型中嵌入垂直领域知识库</title>
+    <link href="http://tonywu.top/2024/04/21/%E5%9C%A8%E9%98%BF%E9%87%8C%E7%9A%84%E7%81%B5%E7%A7%AF%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+    <id>http://tonywu.top/2024/04/21/%E5%9C%A8%E9%98%BF%E9%87%8C%E7%9A%84%E7%81%B5%E7%A7%AF%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86%E5%BA%93/</id>
+    <published>2024-04-20T20:27:00.000Z</published>
+    <updated>2024-04-20T20:28:15.711Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在阿里的灵积模型中嵌入垂直领域知识库&quot;&gt;&lt;a href=&quot;#在阿里的灵积模型中嵌入垂直领域知识库&quot; class=&quot;headerlink&quot; title=&quot;在阿里的灵积模型中嵌入垂直领域知识库&quot;&gt;&lt;/a&gt;在阿里的灵积模型中嵌入垂直领域知识库&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="http://tonywu.top/categories/AI/"/>
+    
+    
+    <category term="大模型" scheme="http://tonywu.top/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建国内可访问的ai网页端</title>
     <link href="http://tonywu.top/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/"/>
     <id>http://tonywu.top/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/</id>
     <published>2024-04-03T04:10:17.000Z</published>
-    <updated>2024-04-03T04:11:10.898Z</updated>
+    <updated>2024-04-20T20:28:09.540Z</updated>
     
     
       
@@ -34,8 +59,10 @@
     
     
     
+    <category term="AI" scheme="http://tonywu.top/categories/AI/"/>
     
-    <category term="vercel ai" scheme="http://tonywu.top/tags/vercel-ai/"/>
+    
+    <category term="vercel aicate" scheme="http://tonywu.top/tags/vercel-aicate/"/>
     
   </entry>
   
@@ -44,7 +71,7 @@
     <link href="http://tonywu.top/2024/04/01/%E4%BD%BF%E7%94%A8beekeeper%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://tonywu.top/2024/04/01/%E4%BD%BF%E7%94%A8beekeeper%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
     <published>2024-03-31T23:10:12.000Z</published>
-    <updated>2024-04-03T04:11:30.554Z</updated>
+    <updated>2024-04-15T15:45:39.608Z</updated>
     
     
       
@@ -57,8 +84,12 @@
     
     
     
+    <category term="mysql" scheme="http://tonywu.top/categories/mysql/"/>
+    
     
     <category term="mysql" scheme="http://tonywu.top/tags/mysql/"/>
+    
+    <category term="beekeeper" scheme="http://tonywu.top/tags/beekeeper/"/>
     
   </entry>
   
