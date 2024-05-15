@@ -54,7 +54,7 @@ NEW_PASSWORD即为admin用户的密码。
 
 之后保存即可
 
-[这是我的alist网页](s.tonywu.top:5244)
+[这是我的alist网页](http://s.tonywu.top:5244)
 
 可以使用下面这个账号登陆
 
