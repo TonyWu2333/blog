@@ -1,5 +1,5 @@
 ---
-itle: 计算机组成原理Chapter1
+title: 计算机组成原理Chapter1
 date: 2024-06-23 4:44:44
 tags: 计组
 categories: 计算机
@@ -15,13 +15,13 @@ categories: 计算机
 
 ## All computer functions are:
 
-* Data processing
+1. Data processing
 
-* Data storage
+2. Data storage
 
-* Data movement
+3. Data movement
 
-* Control
+4. Control
 
 ![computer functions](https://s2.loli.net/2024/06/23/3SHs4NZYOmfVc8T.png)
 
