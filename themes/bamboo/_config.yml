@@ -763,7 +763,7 @@ import:
     - 
   script: 
     # - <script src="xxx.js"></script>
-    - 
+    - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3981936378354050"crossorigin="anonymous"></script>
     - 
 
 # 文章图片,不指定 img:xxx 的时候随机取下面的图片

@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>计算机组成原理Chapter1</title>
+      <link href="/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/"/>
+      <url>/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="chapter-1"><a href="#chapter-1" class="headerlink" title="chapter 1"></a>chapter 1</h1><h2 id="Architecture-Organization"><a href="#Architecture-Organization" class="headerlink" title="Architecture &amp; Organization"></a>Architecture &amp; Organization</h2><p><strong>Architecture</strong> is those attributes visible to the programmer</p><p><strong>Organization</strong> is how features are implemented</p><h2 id="All-computer-functions-are"><a href="#All-computer-functions-are" class="headerlink" title="All computer functions are:"></a>All computer functions are:</h2><ol><li><p>Data processing</p></li><li><p>Data storage</p></li><li><p>Data movement</p></li><li><p>Control</p></li></ol><p><img src="https://s2.loli.net/2024/06/23/3SHs4NZYOmfVc8T.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/3SHs4NZYOmfVc8T.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="computer functions"></p><h2 id="Three-Level-Views"><a href="#Three-Level-Views" class="headerlink" title="Three Level Views"></a>Three Level Views</h2><p><img src="https://s2.loli.net/2024/06/23/CkHvRL8h9SqW6rc.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/CkHvRL8h9SqW6rc.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044048"></p><p><img src="https://s2.loli.net/2024/06/23/gkiv3fnL7zwmaP8.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/gkiv3fnL7zwmaP8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044117"></p><p><img src="https://s2.loli.net/2024/06/23/Vvr8GFNZIHK25Lt.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/Vvr8GFNZIHK25Lt.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044138"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通过部署alist挂载各大网盘资源</title>
+      <link href="/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
+      <url>/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="通过部署alist挂载各大网盘资源"><a href="#通过部署alist挂载各大网盘资源" class="headerlink" title="通过部署alist挂载各大网盘资源"></a>通过部署alist挂载各大网盘资源</h1><h2 id="安装alist"><a href="#安装alist" class="headerlink" title="安装alist"></a>安装alist</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install curl</span><br><span class="line">curl -fsSL &quot;https://alist.nn.ci/v3.sh&quot; | bash -s install</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">启动: systemctl start alist</span><br><span class="line">关闭: systemctl stop alist</span><br><span class="line">状态: systemctl status alist</span><br><span class="line">重启: systemctl restart alist</span><br></pre></td></tr></table></figure><p>放行5244端口</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow 5244/tcp</span><br></pre></td></tr></table></figure><h2 id="配置管理员密码"><a href="#配置管理员密码" class="headerlink" title="配置管理员密码"></a>配置管理员密码</h2><p>alist默认安装在 &#x2F;opt&#x2F;alist 中。进入其目录后执行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./alist admin set NEW_PASSWORD</span><br></pre></td></tr></table></figure><p>NEW_PASSWORD即为admin用户的密码。</p><h2 id="挂载网盘"><a href="#挂载网盘" class="headerlink" title="挂载网盘"></a>挂载网盘</h2><p>我这里以天翼云盘为例</p><p>驱动选择天翼云盘客户端</p><p>挂载路径必填，相当于目录位置</p><p>用户和密码必填，这就是天翼云盘的账号密码</p><p>根文件夹ID可以根据下图我选中的部分来查看</p><p><img src="https://s2.loli.net/2024/05/16/4yUvGHBO7Yhbntf.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/05/16/4yUvGHBO7Yhbntf.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="文件夹ID"></p><p>其他选项根据需要填写</p><p>之后保存即可</p><p><a href="http://s.tonywu.top:5244/">这是我的alist网页</a></p><p>可以使用下面这个账号登陆</p><p>用户名：friend</p><p>密码：123123123</p><p>有查看和下载的权限</p><p>欢迎来白嫖哦~</p><h2 id="离线下载功能"><a href="#离线下载功能" class="headerlink" title="离线下载功能"></a>离线下载功能</h2><p>离线下载功能需要安装aria2，安装方法可查看<a href="https://zhuanlan.zhihu.com/p/658156257">这篇文章</a></p><p>安装完成后打开alist右下角的按钮并展开，选择离线下载，并选择aria2即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> alist </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>部署minecraft服务器并添加mods</title>
+      <link href="/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/"/>
+      <url>/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭建minecraft服务器并添加mods"><a href="#搭建minecraft服务器并添加mods" class="headerlink" title="搭建minecraft服务器并添加mods"></a>搭建minecraft服务器并添加mods</h1><h2 id="下载forge"><a href="#下载forge" class="headerlink" title="下载forge"></a>下载<a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html">forge</a></h2><p>找到你要的forge版本<br><img src="https://s2.loli.net/2024/04/21/vO21fKTjPQUXR4A.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/21/vO21fKTjPQUXR4A.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>选择intall server<br><img src="https://s2.loli.net/2024/04/21/MACfe2IRPgFDG3E.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/21/MACfe2IRPgFDG3E.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><h2 id="部署forge服务器"><a href="#部署forge服务器" class="headerlink" title="部署forge服务器"></a>部署forge服务器</h2><p>根据你的操作系统打开run.sh（linux）或run.bat（windows），在此之前要先安装java，并确认你的java版本与forge版本兼容。<br><img src="https://s2.loli.net/2024/04/21/91DhbGNkB2av8qE.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/21/91DhbGNkB2av8qE.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>此时会生成一个elua.txt，打开并将elua的值改为true，再次启动run.sh（run.bat）<br><img src="https://s2.loli.net/2024/04/21/fGFoIdql5OAxL7U.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/21/fGFoIdql5OAxL7U.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>mod可以放入mods文件夹内，成功启动后界面如下<br><img src="https://s2.loli.net/2024/04/21/Dld5x6PoiEVXgJt.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/21/Dld5x6PoiEVXgJt.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>打开服务器的25565端口即可远程连接mc服务器</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> minecraft </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在阿里的灵积模型中嵌入垂直领域知识库</title>
       <link href="/2024/04/21/%E5%9C%A8%E9%98%BF%E9%87%8C%E7%9A%84%E7%81%B5%E7%A7%AF%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
       <url>/2024/04/21/%E5%9C%A8%E9%98%BF%E9%87%8C%E7%9A%84%E7%81%B5%E7%A7%AF%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86%E5%BA%93/</url>
@@ -33,7 +108,7 @@
       <link href="/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/"/>
       <url>/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/</url>
       
-        <content type="html"><![CDATA[<h1 id="搭建国内可访问的ai网页端"><a href="#搭建国内可访问的ai网页端" class="headerlink" title="搭建国内可访问的ai网页端"></a>搭建国内可访问的ai网页端</h1><p>各个大厂的AI大家想必应该都已经体验过了。但当我们的亲朋好友想使用ai时，就比较麻烦了。所以这里提供一个快速自建ai网页端的方案，能让朋友不用科学上网也能体验到国外的大模型。</p><h2 id="Vercel部署网页"><a href="#Vercel部署网页" class="headerlink" title="Vercel部署网页"></a>Vercel部署网页</h2><p>如果你有openai的api额度，可以创建一个api key。没有openai的话，google的gemini或其他模型的api key也可以。</p><p>部署非常简单，创建仓库后填一下OPENAI_API_KEY和CODE（安全密码，可选）即可</p><p><img src="https://s2.loli.net/2024/04/03/SQ2ueCkZ97WGTib.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/SQ2ueCkZ97WGTib.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>点击deploy，等待几分钟后，网页便部署好了</p><h2 id="添加GOOGLE-API-KEY"><a href="#添加GOOGLE-API-KEY" class="headerlink" title="添加GOOGLE API KEY"></a>添加GOOGLE API KEY</h2><p>在setting中的environment variables中添加key（密钥名称GOOGLE_API_KEY）和value（你的密钥），点击save。</p><p><img src="https://s2.loli.net/2024/04/03/Leyl84fGHIKBUYT.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/Leyl84fGHIKBUYT.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>在settings-&gt;domain中添加你的域名，然后在你购买域名的平台cname解析到vercel给你显示的地址。<br>在deployment中点击redeploy重新部署网页</p><h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>在登陆输入刚刚设置的code</p><p><img src="https://s2.loli.net/2024/04/03/UhR3l4pF5LADJWY.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/UhR3l4pF5LADJWY.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>登陆后可以在设置中将模型改为google的gemini</p><p><img src="https://s2.loli.net/2024/04/03/T6ocMVp57g9yUbz.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/T6ocMVp57g9yUbz.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>之后就可用开始愉快使用啦！</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="搭建国内可访问的ai网页端"><a href="#搭建国内可访问的ai网页端" class="headerlink" title="搭建国内可访问的ai网页端"></a>搭建国内可访问的ai网页端</h1><p>各个大厂的AI大家想必应该都已经体验过了。但当我们的亲朋好友想使用ai时，就比较麻烦了。所以这里提供一个快速自建ai网页端的方案，能让朋友不用科学上网也能体验到国外的大模型。</p><h2 id="Vercel部署网页"><a href="#Vercel部署网页" class="headerlink" title="Vercel部署网页"></a>Vercel部署网页</h2><p>如果你有openai的api额度，可以创建一个api key。没有openai的话，google的gemini或其他模型的api key也可以。</p><p>部署非常简单，创建仓库后填一下OPENAI_API_KEY和CODE（安全密码，可选）即可。</p><p><a href="https://vercel.com/new/clone?repository-url=https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat">点我跳转部署</a></p><p><img src="https://s2.loli.net/2024/04/03/SQ2ueCkZ97WGTib.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/SQ2ueCkZ97WGTib.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>点击deploy，等待几分钟后，网页便部署好了</p><h2 id="添加GOOGLE-API-KEY"><a href="#添加GOOGLE-API-KEY" class="headerlink" title="添加GOOGLE API KEY"></a>添加GOOGLE API KEY</h2><p>在setting中的environment variables中添加key（密钥名称GOOGLE_API_KEY）和value（你的密钥），点击save。</p><p><img src="https://s2.loli.net/2024/04/03/Leyl84fGHIKBUYT.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/Leyl84fGHIKBUYT.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>在settings-&gt;domain中添加你的域名，然后在你购买域名的平台cname解析到vercel给你显示的地址。<br>在deployment中点击redeploy重新部署网页</p><h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>在登陆输入刚刚设置的code</p><p><img src="https://s2.loli.net/2024/04/03/UhR3l4pF5LADJWY.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/UhR3l4pF5LADJWY.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>登陆后可以在设置中将模型改为google的gemini</p><p><img src="https://s2.loli.net/2024/04/03/T6ocMVp57g9yUbz.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/04/03/T6ocMVp57g9yUbz.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><p>之后就可用开始愉快使用啦！</p>]]></content>
       
       
       <categories>

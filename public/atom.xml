@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-04-20T20:28:15.711Z</updated>
+  <updated>2024-06-22T20:53:05.015Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机组成原理Chapter1</title>
+    <link href="http://tonywu.top/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/"/>
+    <id>http://tonywu.top/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/</id>
+    <published>2024-06-22T20:44:44.000Z</published>
+    <updated>2024-06-22T20:53:05.015Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;chapter-1&quot;&gt;&lt;a href=&quot;#chapter-1&quot; class=&quot;headerlink&quot; title=&quot;chapter 1&quot;&gt;&lt;/a&gt;chapter 1&lt;/h1&gt;&lt;h2 id=&quot;Architecture-Organization&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机" scheme="http://tonywu.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+    <category term="计组" scheme="http://tonywu.top/tags/%E8%AE%A1%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过部署alist挂载各大网盘资源</title>
+    <link href="http://tonywu.top/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
+    <id>http://tonywu.top/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
+    <published>2024-05-15T22:10:14.000Z</published>
+    <updated>2024-05-18T10:11:13.767Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;通过部署alist挂载各大网盘资源&quot;&gt;&lt;a href=&quot;#通过部署alist挂载各大网盘资源&quot; class=&quot;headerlink&quot; title=&quot;通过部署alist挂载各大网盘资源&quot;&gt;&lt;/a&gt;通过部署alist挂载各大网盘资源&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="web" scheme="http://tonywu.top/categories/web/"/>
+    
+    
+    <category term="alist" scheme="http://tonywu.top/tags/alist/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署minecraft服务器并添加mods</title>
+    <link href="http://tonywu.top/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/"/>
+    <id>http://tonywu.top/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/</id>
+    <published>2024-04-21T14:24:37.000Z</published>
+    <updated>2024-04-21T14:25:49.844Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;搭建minecraft服务器并添加mods&quot;&gt;&lt;a href=&quot;#搭建minecraft服务器并添加mods&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="minecraft" scheme="http://tonywu.top/categories/minecraft/"/>
+    
+    
+    <category term="mc" scheme="http://tonywu.top/tags/mc/"/>
+    
+  </entry>
   
   <entry>
     <title>在阿里的灵积模型中嵌入垂直领域知识库</title>
@@ -46,7 +121,7 @@
     <link href="http://tonywu.top/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/"/>
     <id>http://tonywu.top/2024/04/03/%E6%90%AD%E5%BB%BA%E5%9B%BD%E5%86%85%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84ai%E7%BD%91%E9%A1%B5%E7%AB%AF/</id>
     <published>2024-04-03T04:10:17.000Z</published>
-    <updated>2024-04-20T20:28:09.540Z</updated>
+    <updated>2024-04-22T15:02:29.362Z</updated>
     
     
       
