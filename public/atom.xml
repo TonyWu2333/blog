@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-06-22T20:53:05.015Z</updated>
+  <updated>2024-05-18T10:11:13.767Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>计算机组成原理Chapter1</title>
-    <link href="http://tonywu.top/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/"/>
-    <id>http://tonywu.top/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/</id>
-    <published>2024-06-22T20:44:44.000Z</published>
-    <updated>2024-06-22T20:53:05.015Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;chapter-1&quot;&gt;&lt;a href=&quot;#chapter-1&quot; class=&quot;headerlink&quot; title=&quot;chapter 1&quot;&gt;&lt;/a&gt;chapter 1&lt;/h1&gt;&lt;h2 id=&quot;Architecture-Organization&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="计算机" scheme="http://tonywu.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-    <category term="计组" scheme="http://tonywu.top/tags/%E8%AE%A1%E7%BB%84/"/>
-    
-  </entry>
   
   <entry>
     <title>通过部署alist挂载各大网盘资源</title>

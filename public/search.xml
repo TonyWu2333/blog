@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>计算机组成原理Chapter1</title>
-      <link href="/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/"/>
-      <url>/2024/06/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86Chapter1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="chapter-1"><a href="#chapter-1" class="headerlink" title="chapter 1"></a>chapter 1</h1><h2 id="Architecture-Organization"><a href="#Architecture-Organization" class="headerlink" title="Architecture &amp; Organization"></a>Architecture &amp; Organization</h2><p><strong>Architecture</strong> is those attributes visible to the programmer</p><p><strong>Organization</strong> is how features are implemented</p><h2 id="All-computer-functions-are"><a href="#All-computer-functions-are" class="headerlink" title="All computer functions are:"></a>All computer functions are:</h2><ol><li><p>Data processing</p></li><li><p>Data storage</p></li><li><p>Data movement</p></li><li><p>Control</p></li></ol><p><img src="https://s2.loli.net/2024/06/23/3SHs4NZYOmfVc8T.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/3SHs4NZYOmfVc8T.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="computer functions"></p><h2 id="Three-Level-Views"><a href="#Three-Level-Views" class="headerlink" title="Three Level Views"></a>Three Level Views</h2><p><img src="https://s2.loli.net/2024/06/23/CkHvRL8h9SqW6rc.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/CkHvRL8h9SqW6rc.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044048"></p><p><img src="https://s2.loli.net/2024/06/23/gkiv3fnL7zwmaP8.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/gkiv3fnL7zwmaP8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044117"></p><p><img src="https://s2.loli.net/2024/06/23/Vvr8GFNZIHK25Lt.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/06/23/Vvr8GFNZIHK25Lt.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20240623044138"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 计算机 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 计组 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>通过部署alist挂载各大网盘资源</title>
       <link href="/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
       <url>/2024/05/16/%E9%80%9A%E8%BF%87%E9%83%A8%E7%BD%B2alist%E6%8C%82%E8%BD%BD%E5%90%84%E5%A4%A7%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</url>
