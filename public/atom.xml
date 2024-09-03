@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-05-18T10:11:13.767Z</updated>
+  <updated>2024-09-03T09:46:57.110Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络协议基本知识</title>
+    <link href="http://tonywu.top/2024/09/03/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    <id>http://tonywu.top/2024/09/03/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
+    <published>2024-09-03T09:46:07.000Z</published>
+    <updated>2024-09-03T09:46:57.110Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;网络协议基本知识&quot;&gt;&lt;a href=&quot;#网络协议基本知识&quot; class=&quot;headerlink&quot; title=&quot;网络协议基本知识&quot;&gt;&lt;/a&gt;网络协议基本知识&lt;/h1&gt;&lt;h1 id=&quot;HTTP版本&quot;&gt;&lt;a href=&quot;#HTTP版本&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="http" scheme="http://tonywu.top/tags/http/"/>
+    
+  </entry>
   
   <entry>
     <title>通过部署alist挂载各大网盘资源</title>
@@ -46,7 +69,7 @@
     <link href="http://tonywu.top/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/"/>
     <id>http://tonywu.top/2024/04/21/%E9%83%A8%E7%BD%B2minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B9%B6%E6%B7%BB%E5%8A%A0mods/</id>
     <published>2024-04-21T14:24:37.000Z</published>
-    <updated>2024-04-21T14:25:49.844Z</updated>
+    <updated>2024-09-03T09:53:31.369Z</updated>
     
     
       
@@ -221,31 +244,6 @@
     
     
     <category term="UX" scheme="http://tonywu.top/tags/UX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统答疑（一）</title>
-    <link href="http://tonywu.top/2024/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AD%94%E7%96%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://tonywu.top/2024/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AD%94%E7%96%91%EF%BC%88%E4%B8%80%EF%BC%89/</id>
-    <published>2024-03-04T03:22:42.000Z</published>
-    <updated>2024-03-04T11:15:49.402Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;What-are-the-three-main-purposes-of-an-operating-system&quot;&gt;&lt;a href=&quot;#What-are-the-three-main-purposes-of-an-operating-system&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="操作系统" scheme="http://tonywu.top/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="operating system" scheme="http://tonywu.top/tags/operating-system/"/>
     
   </entry>
   

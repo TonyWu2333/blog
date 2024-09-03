@@ -23,3 +23,9 @@ categories: minecraft
 mod可以放入mods文件夹内，成功启动后界面如下
 ![](https://s2.loli.net/2024/04/21/Dld5x6PoiEVXgJt.png)
 打开服务器的25565端口即可远程连接mc服务器
+
+## 其他MC服务器核心
+
+除了forge其他还有很多服务器核心，如paper，mohist，arclight等，可以根据是否要添加插件或模组进行选择。其他服务器的部署与使用与forge大同小异，具体可以参考该服务器核心的文档。
+
+[这里是服务器核心镜像网站](https://www.fastmirror.net/?coreVersion=1.20.1#/download/Paper?coreVersion=1.21.1)。
