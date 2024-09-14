@@ -93,6 +93,13 @@
         "avatar": "https://blog.dejavu.moe/avatar.webp",
         "screenshot": "https://s2.loli.net/2024/09/15/ywKQMUcJCbLON1u.png",
         "description": "Not for success, just for growing."
-    }
+    },
     
+    {
+        "title": "Sukka's Blog",
+        "url": "https://skk.moe",
+        "avatar": "https://cdn.skk.moe/favicon/favicon-32x32.png",
+        "screenshot": "https://cdn.skk.moe/img/banner.png",
+        "description": "童话只美在真实却从不续写"
+    }
 ]
