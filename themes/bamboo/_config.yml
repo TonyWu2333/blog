@@ -759,7 +759,7 @@ wordcount:
 import:
   link:
     # - <link href="xxx.css"  rel="stylesheet">
-    - 
+    - <meta name="referrer" content="no-referrer">
     - 
   script: 
     # - <script src="xxx.js"></script>
