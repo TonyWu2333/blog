@@ -85,6 +85,14 @@
         "avatar": "https://blog.linioi.com/hotlink-ok/images/avatar.jpg",
         "screenshot": "https://s2.loli.net/2024/09/15/c7PuKWgb56lpSMF.png",
         "description": "人生如逆旅，我亦是行人"
+    },
+
+    {
+        "title": "Dejavu's Blog",
+        "url": "https://blog.dejavu.moe/",
+        "avatar": "https://blog.dejavu.moe/avatar.webp",
+        "screenshot": "https://s2.loli.net/2024/09/15/ywKQMUcJCbLON1u.png",
+        "description": "Not for success, just for growing."
     }
     
 ]
