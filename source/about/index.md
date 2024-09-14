@@ -7,6 +7,8 @@ date: 2024-03-04 14:32:45
 
 本人目前本科生一枚，软件工程专业。平时比较摆，但一遇到感兴趣的事情就停不下来。
 
+<img width="400" height="140" src="https://card.snowice.fun/card/76561198394799551/dark,en,badge,group,text-9999">
+
 目前学习过的语言和技能
 {% btn center cool-1, c++, ,  %}
 {% btn center cool-2, c, ,  %}
