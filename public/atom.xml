@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-09-20T07:41:59.744Z</updated>
+  <updated>2024-10-11T18:48:39.953Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手动安装SSL并反向代理其他端口</title>
+    <link href="http://tonywu.top/2024/10/12/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85SSL%E5%B9%B6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/"/>
+    <id>http://tonywu.top/2024/10/12/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85SSL%E5%B9%B6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/</id>
+    <published>2024-10-11T18:47:50.000Z</published>
+    <updated>2024-10-11T18:48:39.953Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;手动添加SSL证书并反向代理其他端口&quot;&gt;&lt;a href=&quot;#手动添加SSL证书并反向代理其他端口&quot; class=&quot;headerlink&quot; title=&quot;手动添加SSL证书并反向代理其他端口&quot;&gt;&lt;/a&gt;手动添加SSL证书并反向代理其他端口&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="web" scheme="http://tonywu.top/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>网络协议基本知识</title>

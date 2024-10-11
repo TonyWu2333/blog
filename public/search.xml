@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>手动安装SSL并反向代理其他端口</title>
+      <link href="/2024/10/12/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85SSL%E5%B9%B6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/"/>
+      <url>/2024/10/12/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85SSL%E5%B9%B6%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="手动添加SSL证书并反向代理其他端口"><a href="#手动添加SSL证书并反向代理其他端口" class="headerlink" title="手动添加SSL证书并反向代理其他端口"></a>手动添加SSL证书并反向代理其他端口</h1><h2 id="下载证书"><a href="#下载证书" class="headerlink" title="下载证书"></a>下载证书</h2><p>这里以我在阿里云上申请的免费证书为例</p><p><img src="https://s2.loli.net/2024/10/12/DpxaVQwHX1Oz5NG.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/10/12/DpxaVQwHX1Oz5NG.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20241012021332"></p><p>因为我用的服务器是nginx，所以下载对应的压缩包，解压后有两个文件。key是密钥，pem是证书</p><p><img src="https://s2.loli.net/2024/10/12/gSkCrKAV7aE4dnY.png" class="lazyload placeholder" data-srcset="https://s2.loli.net/2024/10/12/gSkCrKAV7aE4dnY.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="20241012021558"></p><h2 id="上传文件至服务器"><a href="#上传文件至服务器" class="headerlink" title="上传文件至服务器"></a>上传文件至服务器</h2><p>接下来把证书和密钥上传到服务器，路径随意（配置里可指定），一般默认如下：</p><p>证书文件：&#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;</p><p>私钥文件：&#x2F;etc&#x2F;ssl&#x2F;private&#x2F;</p><h2 id="更改nginx配置文件"><a href="#更改nginx配置文件" class="headerlink" title="更改nginx配置文件"></a>更改nginx配置文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/nginx/sites-available/default</span><br></pre></td></tr></table></figure><p>按 i 进入vim的编辑模式</p><p>在配置里指定证书和密钥的路径，我的alist运行在5244端口，所以我通过下面配置直接把443端口反向代理到5244端口。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;  # 监听443端口并启用SSL</span><br><span class="line">    server_name your_domain_or_ip;  # 替换为你的域名或 IP</span><br><span class="line"></span><br><span class="line">    ssl_certificate /etc/ssl/certs/your_certificate.crt;  # 证书路径</span><br><span class="line">    ssl_certificate_key /etc/ssl/private/your_private.key;  # 私钥路径</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:5244;  # 反向代理到5244端口</span><br><span class="line">        proxy_set_header Host $host;  # 转发主机头</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;  # 转发客户端真实IP</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  # 转发代理链中的IP</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;  # 转发协议</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>证书安装完成，重启下nginx，即可用https访问网站</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -t</span><br><span class="line">sudo systemctl reload nginx</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网络协议基本知识</title>
       <link href="/2024/09/03/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
       <url>/2024/09/03/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</url>
