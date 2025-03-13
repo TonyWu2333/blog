@@ -6,7 +6,7 @@
   <link href="http://tonywu.top/atom.xml" rel="self"/>
   
   <link href="http://tonywu.top/"/>
-  <updated>2024-10-11T18:48:39.953Z</updated>
+  <updated>2025-03-13T19:18:14.319Z</updated>
   <id>http://tonywu.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于我因为不想背单词所以搓了一个网站这档事</title>
+    <link href="http://tonywu.top/2025/03/14/%E5%85%B3%E4%BA%8E%E6%88%91%E5%9B%A0%E4%B8%BA%E4%B8%8D%E6%83%B3%E8%83%8C%E5%8D%95%E8%AF%8D%E6%89%80%E4%BB%A5%E6%90%93%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E8%BF%99%E6%A1%A3%E4%BA%8B/"/>
+    <id>http://tonywu.top/2025/03/14/%E5%85%B3%E4%BA%8E%E6%88%91%E5%9B%A0%E4%B8%BA%E4%B8%8D%E6%83%B3%E8%83%8C%E5%8D%95%E8%AF%8D%E6%89%80%E4%BB%A5%E6%90%93%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E8%BF%99%E6%A1%A3%E4%BA%8B/</id>
+    <published>2025-03-13T18:57:28.000Z</published>
+    <updated>2025-03-13T19:18:14.319Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;关于我因为不想背单词所以搓了一个网站这档事&quot;&gt;&lt;a href=&quot;#关于我因为不想背单词所以搓了一个网站这档事&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>手动安装SSL并反向代理其他端口</title>
