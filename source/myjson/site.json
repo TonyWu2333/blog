@@ -1,4 +1,14 @@
 [
+
+    {
+        "title": "SeSameの记事本",
+        "url": "https://blog.minhan.host/",
+        "avatar": "https://blog.minhan.host/img/avatar.jpg",
+        "screenshot": "https://blog.minhan.host/img/welcome.jpg",
+        "description": "平芜尽处是春山"
+    
+    },
+
     {
         "title": "竹林里有冰",
         "url": "https://zhul.in/",
@@ -110,4 +120,5 @@
         "screenshot": "https://s2.loli.net/2024/09/20/YeT2riWRDMVXbLU.png",
         "description": "natural primitive"
     }
+    
 ]
