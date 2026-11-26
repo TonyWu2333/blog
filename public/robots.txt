@@ -3,4 +3,4 @@ Allow: /
 Disallow: /search.xml
 Disallow: /myjson/
 
-Sitemap: https://www.tonywu.top/sitemap.xml
+Sitemap: https://tonywu.top/sitemap.xml

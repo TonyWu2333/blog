@@ -2,8 +2,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "tonywu.top" }],
-      "destination": "https://www.tonywu.top/:path*",
+      "has": [{ "type": "host", "value": "www.tonywu.top" }],
+      "destination": "https://tonywu.top/:path*",
       "permanent": true
     }
   ]
