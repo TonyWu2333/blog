@@ -365,7 +365,7 @@ baiduPush: true
 
 # 音乐
 music:
-  on: true
+  on: false
   autoHide: true    # hide automaticaly
   server: netease   # require music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    # require song, playlist, album, search, artist
