@@ -1,6 +1,7 @@
 ---
 title: 通过部署alist挂载各大网盘资源
 date: 2024-05-16 06:10:14
+updated: 2026-11-26 12:00:00
 tags: alist
 categories: web
 ---
@@ -54,15 +55,7 @@ NEW_PASSWORD即为admin用户的密码。
 
 之后保存即可
 
-[这是我的alist网页](http://s.tonywu.top:5244)
-
-可以使用下面这个账号登陆
-
-用户名：friend
-
-密码：123123123
-
-有查看和下载的权限
+之后就可以用这个账号登录 alist，只拥有你勾选的权限。
 
 欢迎来白嫖哦~
 

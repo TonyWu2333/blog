@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /search.xml
+Disallow: /myjson/
+
+Sitemap: https://www.tonywu.top/sitemap.xml

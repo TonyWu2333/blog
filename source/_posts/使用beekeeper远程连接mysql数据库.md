@@ -1,6 +1,7 @@
 ---
 title: 使用beekeeper远程连接mysql数据库
 date: 2024-04-01 07:10:12
+updated: 2026-11-26 12:00:00
 categories: mysql
 tags: 
     - mysql
@@ -88,16 +89,19 @@ SELECT User, Host, authentication_string FROM mysql.user;
 +------------------+-----------+-------------------------------------------+
 5 rows in set (0.00 sec)
 ```
-给予新用户权限(具体权限可以根据自己的需求更改)
+给予新用户权限。只授权需要的数据库，不要用 `ALL PRIVILEGES ON *.*` 给远程账号全库权限（`mydb` 换成你的库名）
 ```
-GRANT ALL PRIVILEGES ON *.* TO 'tony'@'%';
+CREATE DATABASE IF NOT EXISTS mydb;
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP ON mydb.* TO 'tony'@'%';
 FLUSH PRIVILEGES;
 ```
-配置防火墙，允许3306端口
+配置防火墙，只对你自己的 IP 放行 3306 端口（`1.2.3.4` 换成你本机的公网 IP）
 ```
-sudo ufw allow 3306/tcp
+sudo ufw allow from 1.2.3.4 to any port 3306 proto tcp
 ```
-修改`/etc/mysql/my.cnf`或`/etc/mysql/mysql.conf.d/mysqld.cnf`文件
+> **安全提示**：把 3306 端口对整个公网开放，会被扫描器持续爆破密码。更稳妥的做法是不开放 3306，保持 `bind-address = 127.0.0.1`，在 Beekeeper 里新建连接时打开 **SSH Tunnel**，通过服务器的 SSH 连接数据库。如果一定要直连，至少用强密码，并按上面的方式限制来源 IP。
+
+如果选择直连，修改`/etc/mysql/my.cnf`或`/etc/mysql/mysql.conf.d/mysqld.cnf`文件，让 MySQL 监听外部地址
 ```
 [mysqld]
 bind-address = 0.0.0.0

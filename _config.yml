@@ -9,16 +9,16 @@ description: "吴天卓（Tony Wu）的技术博客：产品经理、全栈 AI �
 keywords: Tony Wu, 吴天卓, AI 产品, RAG, AI Agent, 全栈开发, 产品经理
 author: Tony Wu
 language: zh-CN
-timezone: ""
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://tonywu.top
+url: https://www.tonywu.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -28,7 +28,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "baidu_verify_codeva-cyd3Q3aeLI.html"
+skip_render:
+  - "baidu_verify_codeva-cyd3Q3aeLI.html"
+  - "myjson/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -80,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: "mtime"
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -116,3 +118,10 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# Sitemap (hexo-generator-sitemap)
+sitemap:
+  path: sitemap.xml
+  tags: false
+  categories: false
+  rel: false

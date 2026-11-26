@@ -5,7 +5,7 @@
     </li>
     <li class="post-copyright-link">
     <strong><%= __('copyright.link') %> </strong>
-    <a href="<%- config.root %><%- post.path %>" target="_blank" title="<%= post.title %>"><%- config.url %>/<%- post.path %></a>
+    <a href="<%- url_for(post.path) %>" target="_blank" title="<%= post.title %>"><%= decodeURI(full_url_for(post.path)) %></a>
     </li>
     <li class="post-copyright-license">
       <strong><%= __('copyright.license_title') %>  </strong>
