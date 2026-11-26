@@ -46,6 +46,12 @@
 
     // final page title.
     var pageTitle = title ? title + ' | ' + config.title : config.title;
+    // name queries: 吴天卓 / Tony Wu / Wu Tianzhuo / tonywu
+    if (is_home() && !(page.current > 1)) {
+        pageTitle = '吴天卓 Tony Wu（Wu Tianzhuo）的博客 | ' + config.title;
+    } else if (page.path === 'about/index.html') {
+        pageTitle = '关于吴天卓 Tony Wu（Wu Tianzhuo） | ' + config.title;
+    }
 %>
 
 <head>
@@ -55,6 +61,7 @@
   <title><%= pageTitle %></title>
   <%- open_graph({title: pageTitle, twitter_card: 'summary'}) %>
   <link rel="canonical" href="<%= full_url_for(page.canonical_path || page.path) %>">
+  <%- partial('_partial/head/schema') %>
 
   <link rel="icon" type="<%= iconType %>" href="<%- url_for(theme.favicon) %>">
   <link rel="stylesheet" href="<%= theme.CDN.iconfont %>">

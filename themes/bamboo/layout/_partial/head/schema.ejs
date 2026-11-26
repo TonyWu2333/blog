@@ -1,0 +1,132 @@
+<%
+  // ---- constants -------------------------------------------------------
+  var SITE      = config.url.replace(/\/+$/, '');          // https://tonywu.top
+  var HOME      = SITE + '/';
+  var PERSON_ID = 'https://me.tonywu.top/#person';          // single source of truth, defined on the portfolio
+  var AVATAR    = 'https://s2.loli.net/2024/02/27/5hZq8I6JbdEzHQB.jpg';
+  var LANG      = config.language || 'zh-CN';
+
+  // Minimal stub of the portfolio Person: strict subset of me.tonywu.top, same @id.
+  var personStub = {
+    '@type': 'Person',
+    '@id': PERSON_ID,
+    'name': 'Tony Wu',
+    'alternateName': ['吴天卓', 'Wu Tianzhuo', 'Tianzhuo Wu', 'tonywu', 'TonyWu2333'],
+    'url': 'https://me.tonywu.top/',
+    'image': AVATAR,
+    'sameAs': [
+      'https://me.tonywu.top/',
+      HOME,
+      'https://github.com/TonyWu2333',
+      'https://www.linkedin.com/in/tianzhuo-wu-ab4928416/',
+      'https://space.bilibili.com/355271238'
+    ]
+  };
+  var websiteNode = {
+    '@type': 'WebSite',
+    '@id': HOME + '#website',
+    'url': HOME,
+    'name': config.title,
+    'description': config.description,
+    'inLanguage': LANG,
+    'publisher': { '@id': PERSON_ID }
+  };
+
+  var graph = null;
+
+  if (is_home() && page.current === 1) {
+    // ---------- Homepage: WebSite + Blog ----------
+    graph = [
+      websiteNode,
+      {
+        '@type': 'Blog',
+        '@id': HOME + '#blog',
+        'url': HOME,
+        'name': config.title,
+        'description': config.description,
+        'inLanguage': LANG,
+        'isPartOf': { '@id': HOME + '#website' },
+        'author': { '@id': PERSON_ID },
+        'publisher': { '@id': PERSON_ID }
+      },
+      personStub
+    ];
+
+  } else if (is_post()) {
+    // ---------- Post: BlogPosting + BreadcrumbList ----------
+    var plain = strip_html(page.content || '').replace(/\s+/g, ' ').trim();
+    var desc  = page.description || (page.excerpt ? strip_html(page.excerpt).replace(/\s+/g, ' ').trim() : '') || plain.substring(0, 160);
+    var m     = /<img[^>]+src=["']([^"']+)["']/i.exec(page.content || '');
+    var img   = page.img || page.swiperImg || (m && m[1]) || AVATAR;
+    img = /^https?:\/\//.test(img) ? img : full_url_for(img);
+    var cat   = (page.categories && page.categories.length) ? page.categories.first() : null;
+    var kw    = page.tags ? page.tags.map(function (t) { return t.name; }) : [];
+    var postId = page.permalink + '#article';
+
+    var posting = {
+      '@type': 'BlogPosting',
+      '@id': postId,
+      'mainEntityOfPage': { '@type': 'WebPage', '@id': page.permalink },
+      'url': page.permalink,
+      'headline': page.title,
+      'description': desc,
+      'image': [img],
+      'datePublished': page.date.format(),
+      'dateModified': (page.updated || page.date).format(),
+      'inLanguage': LANG,
+      'author': { '@id': PERSON_ID },
+      'publisher': { '@id': PERSON_ID },
+      'isPartOf': { '@id': HOME + '#blog' }
+    };
+    if (cat) { posting.articleSection = cat.name; }
+    if (kw.length) { posting.keywords = kw.join(', '); }
+
+    var crumbs = [{ '@type': 'ListItem', 'position': 1, 'name': '首页', 'item': HOME }];
+    if (cat) {
+      crumbs.push({ '@type': 'ListItem', 'position': crumbs.length + 1, 'name': cat.name, 'item': full_url_for(cat.path) });
+    }
+    crumbs.push({ '@type': 'ListItem', 'position': crumbs.length + 1, 'name': page.title });  // last item: no "item" is allowed
+    var breadcrumb = { '@type': 'BreadcrumbList', '@id': page.permalink + '#breadcrumb', 'itemListElement': crumbs };
+
+    graph = [websiteNode, posting, breadcrumb, personStub];
+
+  } else if (page.path === 'about/index.html') {
+    // ---------- About: ProfilePage -> Person ----------
+    var aboutUrl = HOME + 'about/';
+    graph = [
+      websiteNode,
+      {
+        '@type': 'ProfilePage',
+        '@id': aboutUrl + '#profilepage',
+        'url': aboutUrl,
+        'name': '关于我 | ' + config.title,
+        'inLanguage': LANG,
+        'isPartOf': { '@id': HOME + '#website' },
+        'mainEntity': { '@id': PERSON_ID },
+        'dateCreated': page.date.format(),
+        'dateModified': (page.updated || page.date).format(),
+        'breadcrumb': { '@id': aboutUrl + '#breadcrumb' }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': aboutUrl + '#breadcrumb',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': '首页', 'item': HOME },
+          { '@type': 'ListItem', 'position': 2, 'name': '关于我' }
+        ]
+      },
+      // Person: same @id as the portfolio; subset of its facts plus facts already stated on /about/ (all match the portfolio).
+      Object.assign({}, personStub, {
+        'description': '会写代码的产品经理，设计并亲手做出 AI 产品，来自中国，现居新加坡。',
+        'jobTitle': 'Product Manager and Full-Stack AI Engineer',
+        'worksFor': { '@type': 'Organization', 'name': 'SendOS' },
+        'affiliation': { '@type': 'CollegeOrUniversity', 'name': 'National University of Singapore' },
+        'address': { '@type': 'PostalAddress', 'addressLocality': 'Singapore', 'addressCountry': 'SG' },
+        'knowsLanguage': ['zh', 'en']
+      })
+    ];
+  }
+%>
+<% if (graph) { %>
+<script type="application/ld+json"><%- JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c') %></script>
+<% } %>
