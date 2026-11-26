@@ -9,7 +9,7 @@ description: "吴天卓（Tony Wu）的技术博客：产品经理、全栈 AI �
 keywords: Tony Wu, 吴天卓, AI 产品, RAG, AI Agent, 全栈开发, 产品经理
 author: Tony Wu
 language: zh-CN
-timezone: "Asia/Shanghai"
+timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
