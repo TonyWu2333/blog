@@ -76,8 +76,8 @@ sidebar:
       shape: rectangle # circle, rectangle
       url: /about/
       title: T-ON-Y
-      subtitle: 会写代码的产品经理 · AI 工程师
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      subtitle: AI 产品经理 工程师
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
       background: '#fff'
       order: 0 # 卡片排序, 数值越小，越在上面
