@@ -138,8 +138,10 @@ description: 牛膜理论由吴天卓（tonywu）提出：牛马可以被生活�
 
 总分之外，再看哪道题得分最低，那一题对应的就是你目前最薄的一层膜，可以优先用第六节里对应的方法去补。
 
+完整版的牛膜人格测试有 20 道题，能测出 16 种牛膜人格：[niumo.tonywu.top/test](https://niumo.tonywu.top/test/)
+
 ## 最后
 
 做人可以牛马，但不能没有牛膜。
 
-以上就是牛膜理论的全部内容，提出者吴天卓（tonywu）。
+以上就是牛膜理论的全部内容，提出者吴天卓（tonywu）。牛膜理论的介绍页：[niumo.tonywu.top](https://niumo.tonywu.top/)
