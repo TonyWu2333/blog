@@ -59,7 +59,10 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <%- partial('_partial/analytics/google-analytics') %>
   <title><%= pageTitle %></title>
-  <%- open_graph({title: pageTitle, twitter_card: 'summary'}) %>
+  <% var ogOpts = {title: pageTitle, twitter_card: 'summary_large_image'};
+     if (!(page.photos && page.photos.length) && !/<img[\s>]/i.test(page.content || '')) { ogOpts.image = full_url_for('/medias/hero.webp'); }
+     if (page.path === 'about/index.html') { ogOpts.image = 'https://s2.loli.net/2024/02/27/5hZq8I6JbdEzHQB.jpg'; } %>
+  <%- open_graph(ogOpts) %>
   <link rel="canonical" href="<%= full_url_for(page.canonical_path || page.path) %>">
   <%- partial('_partial/head/schema') %>
 

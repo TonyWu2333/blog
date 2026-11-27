@@ -30,9 +30,10 @@
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
-      <span class="title">
+      <% var titleTag = /<h1[\s>]/i.test(post.content || '') ? 'span' : 'h1' %>
+      <<%= titleTag %> class="title" style="margin:0;font-weight:inherit">
         <%= post.title %>
-      </span>
+      </<%= titleTag %>>
     </div>
     
     <% if (post.onlyTitle != true && is_post()) { %>
