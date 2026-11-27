@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tonywu.top/2026/11/27/niumo-theory/</loc>
+    
+    <lastmod>2026-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tonywu.top/2024/04/01/%E4%BD%BF%E7%94%A8beekeeper%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     
     <lastmod>2026-11-26</lastmod>
@@ -121,7 +130,7 @@
 
   <url>
     <loc>https://tonywu.top/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
