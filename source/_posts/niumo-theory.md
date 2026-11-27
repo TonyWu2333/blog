@@ -21,6 +21,8 @@ description: 牛膜理论由吴天卓（tonywu）提出：牛马可以被生活�
 
 外面一点动静，直接就穿到心里去了。牛膜理论要解决的就是这个问题。
 
+牛膜理论有一个单独的网站：[niumo.tonywu.top](https://niumo.tonywu.top/)，上面有理论介绍、[牛膜人格测试](https://niumo.tonywu.top/test/)和 [16 种牛膜人格](https://niumo.tonywu.top/types/)的详细说明。
+
 ## 一、基本概念
 
 **牛**：为了生计持续付出时间和精力的状态，也就是常说的牛马。绝大多数成年人都处在这个状态里，当牛本身不是问题。
@@ -139,10 +141,14 @@ description: 牛膜理论由吴天卓（tonywu）提出：牛马可以被生活�
 
 总分之外，再看哪道题得分最低，那一题对应的就是你目前最薄的一层膜，可以优先用第六节里对应的方法去补。
 
-完整版的牛膜人格测试有 20 道题，能测出 16 种牛膜人格：[niumo.tonywu.top/test](https://niumo.tonywu.top/test/)
+完整版的牛膜人格测试有 20 道题，能测出 16 种牛膜人格：[niumo.tonywu.top/test](https://niumo.tonywu.top/test/)。16 种人格分别是什么样，可以看[这里](https://niumo.tonywu.top/types/)。
 
 ## 最后
 
 做人可以牛马，但不能没有牛膜。
 
-以上就是牛膜理论的全部内容，提出者吴天卓（tonywu）。牛膜理论的介绍页：[niumo.tonywu.top](https://niumo.tonywu.top/)
+以上就是牛膜理论的全部内容，提出者吴天卓（tonywu）。
+
+- 牛膜理论网站：[niumo.tonywu.top](https://niumo.tonywu.top/)
+- 牛膜人格测试 NMTI：[niumo.tonywu.top/test](https://niumo.tonywu.top/test/)
+- 16 种牛膜人格：[niumo.tonywu.top/types](https://niumo.tonywu.top/types/)
