@@ -2,6 +2,7 @@
 title: 牛膜理论：做人可以牛马，但不能没有牛膜
 date: 2026-11-27 12:00:00
 img: /medias/niumo-theory.webp
+og_image: https://niumo.tonywu.top/og/theory.png
 categories: 随笔
 tags:
   - 牛膜理论
